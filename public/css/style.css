@@ -16,12 +16,11 @@ body {
 
 .header {
     height: 100px;
-    padding: 0 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #EE0033;
+    background: #bb161d;
 }
 .header-right {
     display: flex;
@@ -29,11 +28,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-}
-@media (max-width: 960px) {
-    .header {
-        padding: 0 20px;
-    }
 }
 
 .nav {
@@ -51,10 +45,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12px;
 }
 
 .logo p {
+    padding-left: 60px;
     color: #fff;
     font-family: Roboto Mono, sans-serif;
     font-size: 35px;
@@ -62,6 +56,18 @@ body {
     font-weight: 600;
     line-height: normal;
     margin: 0;
+}
+
+.logo-section {
+    padding: 50px 0;
+    width: auto;
+    height: 70px;
+}
+@media (max-width: 600px) {
+    .logo-section {
+    padding: 40px 0;
+    height: 60px;
+}
 }
 
 @media (max-width: 960px) {
@@ -548,31 +554,22 @@ body {
     background-color: #fff;
 }
 .title-title {
+    max-width: 600px;
     height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .title-title p {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    color: #EE0033;
+    color: #fff;
 }
-.footer-contact {
-    max-width: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 12px;
-}
-.footer-contact-detail {
-    display: flex;
-    flex-direction: column;
-}
-.footer-contact p {
-    font-size: 17px;
+.img-hoadao {
+    width: auto;
+    height: 100px;
 }
