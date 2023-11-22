@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
+    <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <div class="icon-menu-mobile" onclick="toggleMenu()">
+                    <img src="./public/images/fill-more.svg" alt="more" />
+                </div>
+                <p>IS156T</p>
+            </div>
+            <button class="btn-login">Contact</button>
+        </header>
+        <nav class="nav">
+            <div class="menu">
+                <a class="link">Trang chủ</a>
+                <a class="link">Giới thiệu</a>
+                <a class="link">Thông tin</a>
+                <a class="link">Lễ hội</a>
+                <a class="link">Ẩm thực</a>
+                <a class="link">Hoa Tết</a>
+                <a class="link">Chúc Tết</a>
+                <a class="link">Liên hệ</a>
+            </div>
+        </nav>
+        <div class="menu-mobile" id="mobileMenu">
+            <a class="mobile-link">Trang chủ</a>
+            <a class="mobile-link">Giới thiệu</a>
+            <a class="mobile-link">Thông tin</a>
+            <a class="mobile-link">Lễ hội</a>
+            <a class="mobile-link">Ẩm thực</a>
+            <a class="mobile-link">Hoa Tết</a>
+            <a class="mobile-link">Chúc Tết</a>
+            <a class="mobile-link">Liên hệ</a>
+        </div>
+        <container class="container">
+            <section class="learn-more">
+                <p class="title">Discover the Cloud's Potential With IS156T</p>
+                <button class="btn-learn-more">Learn More</button>
+            </section>
+            <section id="about-section" class="about">
+                <div class="about-header">
+                    <p class="title-black">The Mission Behind </p>
+                    <h4 class="title-logo">IS156T</h4>
+                </div>
+                <div class="about-body">
+                    <div class="about-left">
+                        <div class="style-about">
+                            <p class="title-blue">About The Course</p>
+                            <div class="styled-text">
+                                <span class="text-regular">
+                                    This course aims to provide students with a comprehensive understanding of the
+                                    business,
+                                    economic, cost, and technical drivers of the industry, ensuring they grasp the 'why'
+                                    before delving into the 'how'.
+                                </span>
+                                <span class="text-regular">
+                                    The course is designed to go beyond industry certification expectations, focusing
+                                    on the students' ability to architect cost-effective, scalable, and highly available
+                                    cloud solutions. It aligns with both business-oriented and technical AWS
+                                    certifications
+                                    and offers a 50% discount voucher upon successful completion.
+                                </span>
+                                <span class="text-regular">
+                                    Students will learn to differentiate between on-premises and cloud infrastructure,
+                                    make informed decisions on cloud migration, implement architectural solutions using
+                                    AWS,
+                                    and optimize infrastructure using AWS's best practices and managed services.
+                                </span>
+                                <span class="text-regular">
+                                    The course involves lectures, hands-on labs, group projects, and a gradual learning
+                                    approach,
+                                    requiring 8-16 hours of study and work per week.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <img class="img" src="./public/images/setion1.svg" alt="setion1" />
+                    </div>
+                </div>
+            </section>
+            <section class="prerequisite">
+                <p class="title-white">Prerequisite & Recommendation</p>
+                <span class="text-white">Required: IS52.</span>
+                <span class="text-white">Recommended: IS181</span>
+            </section>
+            <section id="objectives-section" class="objectives">
+                <div class="objectives-left">
+                    <img class="img" src="./public/images/setion2.svg" alt="setion2" />
+                </div>
+                <div class="objectives-right">
+                    <div class="style-about">
+                        <p class="title-blue">Course Objectives</p>
+                        <div class="styled-text">
+                            <span class="text-regular">Explore the disruptive impact of Cloud Computing as the 3rd wave
+                                of computing and its significance in IT infrastructure.</span>
+                            <span class="text-regular">Gain a comprehensive understanding of the business, economic,
+                                cost, and technical drivers in the IT industry.</span>
+                            <span class="text-regular">Learn to architect cost-effective, scalable, and highly available
+                                cloud solutions following industry best practices.</span>
+                            <span class="text-regular">Align with AWS cloud practitioner and solutions
+                                architect-associate certifications, with a 50% discount voucher upon successful
+                                completion.</span>
+                            <span class="text-regular">Develop the ability to differentiate between on-premises and
+                                cloud infrastructure, make informed decisions on cloud migration,
+                                and utilize AWS services for scalable, reliable, and highly available
+                                infrastructure.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </container>
+        <footer id="hours-section" class="footer">
+            <div>
+                <p class="title-white">Class Hours</p>
+                <div class="display-column">
+                    <span class="text-white">Time: Friday 6:00pm - 9:50pm</span>
+                    <span class="text-white">Location: PB031</span>
+                </div>
+            </div>
+            <div>
+                <p class="title-white">Contact Information</p>
+                <div class="display-column">
+                    <span class="text-white">Instructor: Edward Boehm</span>
+                    <span class="text-white">Email: eboehm@csufresno.edu</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        var mobileMenu = document.getElementById("mobileMenu");
+        var body = document.body;
+
+        if (mobileMenu.style.display === "flex") {
+            mobileMenu.style.display = "none";
+            body.classList.remove("body-no-scroll");
+        } else {
+            mobileMenu.style.display = "flex";
+            body.classList.add("body-no-scroll");
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                var targetId = link.getAttribute("data-target");
+                var targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    scrollToSection(targetSection);
+                }
+            });
+        });
+
+        function scrollToSection(section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: "smooth"
+            });
+        }
+        document.querySelectorAll(".mobile-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                var targetId = link.getAttribute("data-target");
+                var targetSection = document.getElementById(targetId);
+                var mobileMenu = document.getElementById("mobileMenu");
+
+                if (targetSection) {
+                    scrollToSection(targetSection);
+                    mobileMenu.style.display = "none";
+                    document.body.classList.remove("body-no-scroll");
+                }
+            });
+        });
+    });
+</script>

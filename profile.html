@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
+    <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <div class="icon-menu-mobile" onclick="toggleMenu()">
+                    <img src="./public/images/fill-more.svg" alt="more" />
+                </div>
+                <a class="link-logo" href="./"><p>Profile</p></a>
+            </div>
+            <div class="header-right">
+                <div class="search">
+                    <div class="icon-search">
+                        <img src="./public/images/search.svg" alt="search" />
+                    </div>
+                    <input class="input-search" type="text" placeholder="Tìm kiếm..." />
+                </div>
+                <button class="btn-login">Contact</button>
+                <img class="icon-en" src="./public/images/EN.png" />
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="menu">
+                <a href="./" class="link">Trang chủ</a>
+                <a href="./profile.html" class="link">Giới thiệu</a>
+                <a class="link">Thông tin</a>
+                <a class="link">Lễ hội</a>
+                <a class="link">Ẩm thực</a>
+                <a class="link">Hoa Tết</a>
+                <a class="link">Chúc Tết</a>
+                <a class="link">Liên hệ</a>
+            </div>
+        </nav>
+        <div class="menu-mobile" id="mobileMenu">
+            <a href="./" class="mobile-link">Trang chủ</a>
+            <a class="mobile-link">Giới thiệu</a>
+            <a class="mobile-link">Thông tin</a>
+            <a class="mobile-link">Lễ hội</a>
+            <a class="mobile-link">Ẩm thực</a>
+            <a class="mobile-link">Hoa Tết</a>
+            <a class="mobile-link">Chúc Tết</a>
+            <a class="mobile-link">Liên hệ</a>
+        </div>
+        <container class="container">
+            <section id="about-section" class="about">
+                <div class="about-body">
+                    <div class="about-left">
+                        <div class="style-about">
+                            <p class="title-blue">About The Course</p>
+                            <div class="styled-text">
+                                <span class="text-regular">
+                                    This course aims to provide students with a comprehensive understanding of the
+                                    business.
+                                </span>
+                                <span class="text-regular">
+                                    The course is designed to go beyond industry certification expectations, focusing
+                                    on the students' ability to architect cost-effective, scalable, and highly available
+                                    cloud solutions. It aligns with both business-oriented and technical AWS
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <img class="img-user" src="./public/images/user1.jpg" alt="setion1" />
+                    </div>
+                </div>
+            </section>
+            <section id="objectives-section" class="objectives">
+                <div class="objectives-left">
+                    <img class="img-user" src="./public/images/user2.jpg" alt="setion2" />
+                </div>
+                <div class="objectives-right">
+                    <div class="style-about">
+                        <p class="title-blue">Course Objectives</p>
+                        <div class="styled-text">
+                            <span class="text-regular">Explore the disruptive impact of Cloud Computing as the 3rd wave
+                                of computing and its significance in IT infrastructure.</span>
+                            <span class="text-regular">Gain a comprehensive understanding of the business, economic,
+                                cost, and technical drivers in the IT industry.</span>
+                            <span class="text-regular">Learn to architect cost-effective, scalable, and highly available
+                                cloud solutions following industry best practices.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </container>
+        <footer class="footer">
+            <div>
+                <div class="title-title">
+                    <p>Tet</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Nguyen Van A</p>
+                    <div class="footer-contact-detail">
+                        <span>...</span>
+                        <span>...</span>
+                        <span>...</span>
+                        <span>...</span>
+                    </div>
+                </div>
+                <div class="list-icon">
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/facebook.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/instagram.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/pinterest.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/telegram.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/github.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/discord.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img class="icon-contact" src="./public/images/youtube.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                @2024 Chúc mừng năm mới
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function toggleMenu() {
+        var mobileMenu = document.getElementById("mobileMenu");
+        var body = document.body;
+
+        if (mobileMenu.style.display === "flex") {
+            mobileMenu.style.display = "none";
+            body.classList.remove("body-no-scroll");
+        } else {
+            mobileMenu.style.display = "flex";
+            body.classList.add("body-no-scroll");
+        }
+    }
+</script>
